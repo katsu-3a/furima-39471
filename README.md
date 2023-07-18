@@ -42,15 +42,14 @@
 | item   | references | null: false, foreign_key:true |
 
 ## Association
-- belongs_to:user
-- belongs_to:item
-- has_one:shipping
+- belongs_to :user
+- belongs_to :item
+- has_one :shipping
 
 ## shippings テーブル
 | Column        | Type       | Option                        |
 |-------------- |----------- |------------------------------ |
 | id(PK)        | integer    | null: false                   |
-| user          | references | null: false, foreign_key:true |
 | orders        | references | null: false, foreign_key:true |
 | postcode      | string     | null: false                   |
 | prefecture_id | integer    | null: false                   |
@@ -60,4 +59,4 @@
 | phone_number  | string     | null: false                   |
 
 ## Association
-- belongs_to:order
+- belongs_to :order
