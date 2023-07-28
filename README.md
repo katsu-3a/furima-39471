@@ -44,9 +44,9 @@
 ## Association
 - belongs_to :user
 - belongs_to :item
-- has_one :shipping
+- has_one :address
 
-## shippings テーブル
+## addresses テーブル
 | Column        | Type       | Option                        |
 |-------------- |----------- |------------------------------ |
 | id(PK)        | integer    | null: false                   |
